@@ -57,4 +57,14 @@ Users can paste their complaints directly into a text area and get results insta
 ```bash
 git clone https://github.com/2PDevansh/customer_complaints.git
 cd customer_complaints
+```
+### 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run The App
+```bash
+streamlit run app.py
+```
 
