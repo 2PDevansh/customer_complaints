@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Complaint Classifier</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #e6f2ff;
+            color: #1a1a1a;
+            margin: 40px;
+        }
+        h2 {
+            color: navy;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+        .output {
+            margin-top: 20px;
+        }
+        .warning { color: darkorange; }
+        .error { color: red; }
+        .success { color: green; }
+        .info { color: steelblue; }
+    </style>
+</head>
+<body>
+
+    <h2>Bank Complaint Classifier (Multilingual)</h2>
+
+    <form method="POST">
+        <label for="complaint">Enter your complaint text below:</label><br>
+        <textarea name="complaint" required>{{ request.form.get('complaint', '') }}</textarea><br>
+        <button type="submit">Classify</button>
+    </form>
+
+    <div class="output">
+        {% if warning %}
+            <p class="warning">{{ warning }}</p>
+        {% endif %}
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if translated_text %}
+            <p class="info"><strong>Translated Complaint </strong><br>{{ translated_text }}</p>
+        {% endif %}
+        {% if predicted_category %}
+            <p class="success"><strong> Predicted Category</strong> {{ predicted_category }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>

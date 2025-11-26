@@ -1,0 +1,7 @@
+flask
+flask-cors
+gunicorn
+deep-translator
+scikit-learn
+numpy
+setuptools
