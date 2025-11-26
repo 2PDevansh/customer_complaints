@@ -1,6 +1,6 @@
-  # 🏦 Bank Complaint Classifier (Multilingual)
+  #  Bank Complaint Classifier (Multilingual)
   
-  🏦 Bank Complaint Classifier (Multilingual) – Flask Version
+   Bank Complaint Classifier (Multilingual) – Flask Version
 This web application categorizes banking and financial complaints into designated groups utilizing a trained machine learning model.
 
 Designed with Flask for a conventional backend-server methodology, while leveraging Scikit-learn, Naive Bayes, and Deep Translator for multilingual capabilities.
@@ -15,7 +15,7 @@ Designed with Flask for a conventional backend-server methodology, while leverag
 
  Utilizes a Naive Bayes classifier trained on actual complaint data for predictions
 
-💻 Web interface designed with HTML/CSS (through Flask templates)  
+ Web interface designed with HTML/CSS (through Flask templates)  
   
   ---
 
@@ -38,7 +38,7 @@ Designed with Flask for a conventional backend-server methodology, while leverag
 
 ---
 
-## 🖥️ TechStack
+##  TechStack
 
 Backend: Flask
 
@@ -50,7 +50,7 @@ Vectorization: CountVectorizer
 
 ---
 
-## 🧠 Backend
+##  Backend
 
 - Machine learning model serialized using `pickle`  
 - Translation handled via [`deep-translator`](https://pypi.org/project/deep-translator/) (Google Translate)  
