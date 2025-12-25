@@ -1,62 +1,65 @@
-  #  Bank Complaint Classifier (Multilingual)
-  
-   Bank Complaint Classifier (Multilingual) – Flask Version
-This web application categorizes banking and financial complaints into designated groups utilizing a trained machine learning model.
+#  Bank Complaint Classifier (Multilingual)
 
-Designed with Flask for a conventional backend-server methodology, while leveraging Scikit-learn, Naive Bayes, and Deep Translator for multilingual capabilities.
-  
-  ---
-  
-  ##  Categorizes customer complaints into financial classifications
+![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-WebApp-black.svg)
+![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange.svg)
+![NLP](https://img.shields.io/badge/NLP-Text%20Classification-green.svg)
+![Translation](https://img.shields.io/badge/Multilingual-Deep%20Translator-blueviolet.svg)
+![Status](https://img.shields.io/badge/Project-Completed-success.svg)
 
- Accepts input in various languages (automatically translated to English)
+A **multilingual banking complaint classification web application** that automatically categorizes customer complaints into predefined financial categories using **Machine Learning and NLP**.
 
- Filters out irrelevant, courteous, or nonsensical text
+Built with **Flask** for a traditional backend-driven architecture and powered by **Scikit-learn, Naive Bayes**, and **Deep Translator** to support inputs in **multiple languages** .
 
- Utilizes a Naive Bayes classifier trained on actual complaint data for predictions
+---
 
- Web interface designed with HTML/CSS (through Flask templates)  
-  
-  ---
+##  Project Highlights
 
-##  Model Info
+✨ Multilingual Complaint Classification  
+✨ Real-world Financial NLP Use Case  
+✨ Lightweight & Fast Inference  
+✨ Server-side ML Deployment using Flask  
 
-- **Model:** Multinomial Naive Bayes  
-- **Vectorizer:** CountVectorizer  
-- **Encoder:** LabelEncoder  
-- **Training Data:** Custom CSV dataset of labeled bank complaints *(not uploaded due to file size limits)*  
-- **Model Format:** Serialized using `pickle`  
+---
+
+## 🔥 Features
+
+✔️ Categorizes banking & financial complaints into defined groups  
+✔️ Accepts **complaints in multiple languages**  
+✔️ Automatically translates text to English  
+✔️ Filters irrelevant, polite, or nonsensical inputs  
+✔️ Uses a **Naive Bayes classifier trained on real complaint data**  
+✔️ Simple & clean web interface using **HTML/CSS + Flask templates**  
+✔️ Lightweight model with fast predictions  
+
+---
+
+##  Machine Learning Details
+
+- **Model**: Multinomial Naive Bayes  
+- **Vectorizer**: CountVectorizer  
+- **Label Encoding**: LabelEncoder  
+- **Training Data**: Custom CSV dataset of labeled bank complaints  
+  > *(Dataset not uploaded due to file size constraints)*  
+- **Model Format**: Serialized using `pickle`  
 
 ---
 
 ##  How It Works
 
-1. User submits a complaint (in any language)  
-2. Text is translated to English (if needed)  
-3. Input is vectorized and passed to a trained model  
-4. The app returns the most likely complaint category  
+- User submits a complaint (any language)  
+- Text is translated to English (if required)  
+- Input is cleaned and vectorized  
+- Trained ML model predicts complaint category  
+- Most probable classification is returned to the user  
 
 ---
 
-##  TechStack
+## 🗂️ Project Structure
+```
 
-Backend: Flask
 
-Machine Learning: Scikit-learn
-
-Translation: Deep Translator
-
-Vectorization: CountVectorizer
-
----
-
-##  Backend
-
-- Machine learning model serialized using `pickle`  
-- Translation handled via [`deep-translator`](https://pypi.org/project/deep-translator/) (Google Translate)  
-- Input validation with regex and keyword filtering  
-
----
+```
 
 ## Initiating the Process
 
