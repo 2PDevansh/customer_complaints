@@ -15,10 +15,10 @@ Built with **Flask** for a traditional backend-driven architecture and powered b
 
 ##  Project Highlights
 
-✨ Multilingual Complaint Classification  
-✨ Real-world Financial NLP Use Case  
-✨ Lightweight & Fast Inference  
-✨ Server-side ML Deployment using Flask  
+- Multilingual Complaint Classification  
+- Real-world Financial NLP Use Case  
+- Lightweight & Fast Inference  
+- Server-side ML Deployment using Flask  
 
 ---
 
