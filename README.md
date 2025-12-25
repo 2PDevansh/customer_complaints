@@ -55,7 +55,7 @@ Built with **Flask** for a traditional backend-driven architecture and powered b
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 ```
 customer_complaints/
 │
