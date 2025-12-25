@@ -22,15 +22,15 @@ Built with **Flask** for a traditional backend-driven architecture and powered b
 
 ---
 
-## 🔥 Features
+##  Features
 
-✔️ Categorizes banking & financial complaints into defined groups  
-✔️ Accepts **complaints in multiple languages**  
-✔️ Automatically translates text to English  
-✔️ Filters irrelevant, polite, or nonsensical inputs  
-✔️ Uses a **Naive Bayes classifier trained on real complaint data**  
-✔️ Simple & clean web interface using **HTML/CSS + Flask templates**  
-✔️ Lightweight model with fast predictions  
+- Categorizes banking & financial complaints into defined groups  
+- Accepts **complaints in multiple languages**  
+- Automatically translates text to English  
+- Filters irrelevant, polite, or nonsensical inputs  
+- Uses a **Naive Bayes classifier trained on real complaint data**  
+- Simple & clean web interface using **HTML/CSS + Flask templates**  
+- Lightweight model with fast predictions  
 
 ---
 
@@ -57,7 +57,18 @@ Built with **Flask** for a traditional backend-driven architecture and powered b
 
 ## 🗂️ Project Structure
 ```
-
+customer_complaints/
+│
+├── templates/ # HTML templates (Flask UI)
+├── static/ # CSS / assets
+├── model/
+│ ├── complaint_model.pkl # Trained ML model
+│ ├── vectorizer.pkl # CountVectorizer
+│ └── encoder.pkl # LabelEncoder
+│
+├── app.py # Flask application
+├── requirements.txt # Dependencies
+└── README.md # Project documentation
 
 ```
 
