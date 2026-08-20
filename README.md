@@ -1,4 +1,4 @@
-#  Bank Complaint Classifier (Multilingual)
+#  BankSense
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-WebApp-black.svg)
